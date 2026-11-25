@@ -4,7 +4,13 @@ Protótipo de Batalha Naval em Java para console. Uma pessoa joga contra o compu
 
 ## Como executar
 
-É necessário ter um JDK 11 ou superior. No PowerShell, a partir da raiz do repositório:
+É necessário ter um JDK 11 ou superior. No PowerShell, a partir da raiz do repositório, execute:
+
+```powershell
+.\run.ps1
+```
+
+O script usa `JAVA_HOME`, o `javac` do PATH ou um JDK incluído em uma instalação do JetBrains. Para compilar manualmente com um JDK configurado no PATH:
 
 ```powershell
 $arquivosJava = Get-ChildItem src/main/java -Recurse -Filter *.java | ForEach-Object FullName
